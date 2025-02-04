@@ -4,64 +4,68 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Muhammad-Mahdi Amirpour - Computer Engineering Professional</title>
+  <title>Muhammad-Mahdi Amirpour | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
+  <!-- Theme Toggle -->
+  <button id="dark-mode-toggle" aria-label="Toggle dark mode">
+    <i class="fas fa-moon"></i>
+  </button>
+
   <!-- Navigation -->
   <nav class="navbar">
     <div class="container">
       <div class="nav-links">
-        <a href="#home" class="active">Home</a>
-        <a href="#about">About</a>
-        <a href="#skills">Skills</a>
-        <a href="#experience">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#education">Education</a>
+        <a href="#home" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#education" class="nav-link">Education</a>
       </div>
     </div>
   </nav>
 
-  <!-- Header/Hero Section -->
+  <!-- Hero Section -->
   <header id="home" class="hero">
     <div class="container">
-      <div class="profile-card">
-        <div class="profile-info">
-          <h1 class="animate-text">Muhammad-Mahdi Amirpour</h1>
-          <p class="title animate-text-delay">Computer Engineering Student</p>
-          <div class="contact-info">
-            <a href="mailto:muhammadmahdiamirpour@gmail.com" class="contact-link">
-              <i class="fas fa-envelope"></i>
-              <span>Email</span>
-            </a>
-            <a href="https://linkedin.com/in/muhammadmahdi-amirpour" target="_blank" class="contact-link">
-              <i class="fab fa-linkedin"></i>
-              <span>LinkedIn</span>
-            </a>
-            <a href="https://github.com/MuhammadMahdiAmirpour" target="_blank" class="contact-link">
-              <i class="fab fa-github"></i>
-              <span>GitHub</span>
-            </a>
-          </div>
+      <div class="hero-content">
+        <h1 class="main-title animate-text">Muhammad-Mahdi Amirpour</h1>
+        <div class="type-writer">Computer Engineering Student</div>
+        <div class="contact-links">
+          <a href="mailto:muhammadmahdiamirpour@gmail.com" class="contact-link">
+            <i class="fas fa-envelope"></i>
+            <span>muhammadmahdiamirpour@gmail.com</span>
+          </a>
+          <a href="https://linkedin.com/in/muhammadmahdi-amirpour" target="_blank" class="contact-link">
+            <i class="fab fa-linkedin"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a href="https://github.com/MuhammadMahdiAmirpour" target="_blank" class="contact-link">
+            <i class="fab fa-github"></i>
+            <span>GitHub</span>
+          </a>
         </div>
       </div>
     </div>
   </header>
 
   <main>
-    <!-- About/Summary Section -->
+    <!-- About Section -->
     <section id="about" class="section">
       <div class="container">
         <h2 class="section-title">About Me</h2>
-        <div class="card">
-          <p class="summary">A Computer Engineering undergraduate with practical experience in data science and machine
-            learning. Familiar with Python, C/C++, Go, and Docker, and well-grounded in algorithms, data structures, and
-            linear algebra. Served as a teaching assistant in formal languages and signals and systems, and contributed
-            to research on anomaly detection architecture. Motivated to refine technical expertise through hands-on
-            projects and collaborative learning.</p>
+        <div class="section-content">
+          <p class="about-text">
+            A Computer Engineering undergraduate with practical experience in data science and machine learning.
+            Familiar with Python, C/C++, Go, and Docker, and well-grounded in algorithms, data structures, and
+            linear algebra. Served as a teaching assistant in formal languages and signals and systems, and
+            contributed to research on anomaly detection architecture. Motivated to refine technical expertise
+            through hands-on projects and collaborative learning.
+          </p>
         </div>
       </div>
     </section>
@@ -72,7 +76,7 @@
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-grid">
           <div class="skill-card">
-            <i class="fas fa-code card-icon"></i>
+            <i class="fas fa-code"></i>
             <h3>Programming Languages</h3>
             <ul>
               <li>Python</li>
@@ -83,7 +87,14 @@
             </ul>
           </div>
           <div class="skill-card">
-            <i class="fas fa-database card-icon"></i>
+            <i class="fas fa-terminal"></i>
+            <h3>Operating Systems</h3>
+            <ul>
+              <li>Linux (LPIC1)</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database"></i>
             <h3>Databases</h3>
             <ul>
               <li>MySQL</li>
@@ -92,7 +103,7 @@
             </ul>
           </div>
           <div class="skill-card">
-            <i class="fas fa-server card-icon"></i>
+            <i class="fas fa-server"></i>
             <h3>Virtualization</h3>
             <ul>
               <li>Docker</li>
@@ -100,7 +111,7 @@
             </ul>
           </div>
           <div class="skill-card">
-            <i class="fas fa-brain card-icon"></i>
+            <i class="fas fa-brain"></i>
             <h3>Frameworks</h3>
             <ul>
               <li>Numpy</li>
@@ -108,6 +119,17 @@
               <li>Matplotlib</li>
               <li>River</li>
               <li>Pytorch</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-book"></i>
+            <h3>Theory</h3>
+            <ul>
+              <li>Algorithms</li>
+              <li>Data Structures</li>
+              <li>Linear Algebra</li>
+              <li>Operating Systems</li>
+              <li>Signals and Systems</li>
             </ul>
           </div>
         </div>
@@ -119,26 +141,52 @@
       <div class="container">
         <h2 class="section-title">Professional Experience</h2>
         <div class="timeline">
+          <!-- Research Assistant -->
           <div class="timeline-item">
             <div class="timeline-content">
-              <h3>Research Assistant - KNTU</h3>
-              <span class="date">March 2024 – Present</span>
+              <div class="timeline-header">
+                <h3>Research Assistant - KNTU</h3>
+                <span class="date">March 2024 – Present</span>
+              </div>
               <p class="supervisor">Assistant Professor: Dr. B. Pishgoo</p>
               <ul>
                 <li>Designed system architecture for anomaly detection</li>
               </ul>
             </div>
           </div>
+
+          <!-- Concurrent Teaching Assistant Positions -->
           <div class="timeline-item">
-            <div class="timeline-content">
-              <h3>Teaching Assistant - KNTU</h3>
-              <span class="date">March 2024 – February 2025</span>
-              <p class="supervisor">Assistant Professor: Dr. H. Khasteh</p>
-              <ul>
-                <li>Grading quizzes and answering student questions</li>
-                <li>Designed questions for Exercise Sessions</li>
-                <li>Holding Exercise Sessions</li>
-              </ul>
+            <div class="timeline-group">
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Teaching Assistant - KNTU</h3>
+                  <span class="date">March 2024 – February 2025</span>
+                </div>
+                <p class="supervisor">Assistant Professor: Dr. H. Khasteh</p>
+                <ul>
+                  <li>Grading quizzes</li>
+                  <li>Answering students questions</li>
+                  <li>Designed questions for Exercise Sessions</li>
+                  <li>Holding Exercise Sessions</li>
+                </ul>
+              </div>
+
+              <div class="timeline-content">
+                <div class="timeline-header">
+                  <h3>Teaching Assistant - KNTU</h3>
+                  <span class="date">March 2024 – February 2025</span>
+                </div>
+                <p class="supervisor">Assistant Professor: Dr. M. Mordian</p>
+                <ul>
+                  <li>Designed homework questions</li>
+                  <li>Grading quizzes</li>
+                  <li>Answering students questions</li>
+                  <li>Designed questions for Exercise Sessions</li>
+                  <li>Holding Exercise Sessions</li>
+                  <li>Designed the final project of the Signals and Systems Course</li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
@@ -150,103 +198,97 @@
       <div class="container">
         <h2 class="section-title">Notable Projects</h2>
         <div class="projects-grid">
-          <div class="project-card">
+          <article class="project-card">
             <div class="project-content">
               <h3>NLP/Vision/ML Project</h3>
-              <p>Comprehensive analysis of book summaries combining NLP, Computer Vision, and Machine Learning
-                techniques.</p>
-              <ul>
-                <li>Implemented text preprocessing and analysis</li>
-                <li>Developed visual representations from text data</li>
-                <li>Built and evaluated genre classification models</li>
-              </ul>
+              <p>Analysis of book summaries using Python, combining NLP, Computer Vision, and ML techniques.</p>
+              <div class="project-details">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>Data preprocessing and standardization</li>
+                  <li>Text summarization and tokenization</li>
+                  <li>Visual representation generation</li>
+                  <li>Genre classification model</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="project-card">
+          </article>
+
+          <article class="project-card">
             <div class="project-content">
               <h3>Spectral Clustering Project</h3>
               <p>Implementation of spectral clustering algorithms for unsupervised learning.</p>
-              <ul>
-                <li>Implemented RBF Clustering, K-Means, and K-NN Clustering</li>
-                <li>Worked with MNIST dataset for handwritten digit classification</li>
-                <li>Optimized computational efficiency through vectorization</li>
-              </ul>
+              <div class="project-details">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>RBF, K-Means, and K-NN Clustering</li>
+                  <li>MNIST dataset classification</li>
+                  <li>Optimized matrix operations</li>
+                  <li>Performance comparison analysis</li>
+                </ul>
+              </div>
             </div>
-          </div>
-          <div class="project-card">
+          </article>
+
+          <article class="project-card">
             <div class="project-content">
               <h3>Dockerized Full Stack Hotel Booking App</h3>
-              <ul>
-                <li>Developed with Spring Boot and React JS</li>
-                <li>Implemented user authentication and role-based access</li>
-                <li>Containerized with Docker for scalability</li>
-              </ul>
-            </div>
-          </div>
-          <!-- Add this inside the projects-grid div in the Projects Section -->
-          <div class="project-card">
-            <div class="project-content">
-              <h3>Go-Back-N and CRC Simulation</h3>
-              <p>Simulated the Go-Back-N protocol and Cyclic Redundancy Check (CRC) error detection mechanism using
-                Django and JavaScript.</p>
               <div class="project-details">
                 <h4>Key Features:</h4>
                 <ul>
-                  <li>Backend implemented in Django for core functionality</li>
-                  <li>Interactive visualizations of packet flow</li>
-                  <li>Real-time simulation of packet transmission</li>
-                  <li>Error detection and correction visualization</li>
-                  <li>Sliding window protocol management</li>
+                  <li>Spring Security authentication</li>
+                  <li>RESTful API implementation</li>
+                  <li>React JS frontend</li>
+                  <li>JPA Hibernate integration</li>
                 </ul>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="project-card">
+          <article class="project-card">
+            <div class="project-content">
+              <h3>Distributed File System</h3>
+              <div class="project-details">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>Distributed storage architecture</li>
+                  <li>Fault tolerance mechanisms</li>
+                  <li>Efficient file chunking</li>
+                  <li>Docker containerization</li>
+                </ul>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card">
             <div class="project-content">
               <h3>Chat App Go</h3>
-              <p>Real-time chat application using Go and JavaScript</p>
               <div class="project-details">
                 <h4>Key Features:</h4>
                 <ul>
-                  <li>WebSocket-based communication</li>
-                  <li>User authentication and session management</li>
-                  <li>Scalable architecture for concurrent users</li>
+                  <li>WebSocket implementation</li>
+                  <li>User authentication</li>
+                  <li>Real-time messaging</li>
+                  <li>Concurrent user support</li>
                 </ul>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="project-card">
-            <div class="project-content">
-              <h3>Death Arena Game</h3>
-              <p>CLI-based combat game implemented in Java</p>
-              <div class="project-details">
-                <h4>Key Features:</h4>
-                <ul>
-                  <li>Automated gameplay with AI-driven opponents</li>
-                  <li>Turn-based combat mechanics</li>
-                  <li>Random events and outcomes</li>
-                  <li>Simple scoring system</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-
-          <div class="project-card">
+          <article class="project-card">
             <div class="project-content">
               <h3>Video Merger</h3>
-              <p>High-performance video merging utility in C and Assembly</p>
               <div class="project-details">
                 <h4>Key Features:</h4>
                 <ul>
-                  <li>Support for various video formats and resolutions</li>
-                  <li>Optimized performance using Assembly</li>
-                  <li>CMake and Makefile integration</li>
+                  <li>Low-level C/Assembly implementation</li>
+                  <li>Multiple format support</li>
+                  <li>Optimized performance</li>
+                  <li>CMake integration</li>
                 </ul>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </div>
     </section>
@@ -265,43 +307,21 @@
     </section>
   </main>
 
+
+  <!-- Footer -->
   <footer>
     <div class="container">
-      <p>© 2025 Muhammad-Mahdi Amirpour. All rights reserved.</p>
+      <div class="footer-content">
+        <p class="datetime-display">
+          Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted):
+          <span id="current-time"></span>
+        </p>
+        <p class="user-info">Current User's Login: MuhammadMahdiAmirpour</p>
+      </div>
     </div>
   </footer>
 
-  <script>
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-
-    // Active navigation link highlighting
-    window.addEventListener('scroll', () => {
-      let current = '';
-      const sections = document.querySelectorAll('section');
-
-      sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (scrollY >= sectionTop - 60) {
-          current = section.getAttribute('id');
-        }
-      });
-
-      document.querySelectorAll('.nav-links a').forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').substring(1) === current) {
-          link.classList.add('active');
-        }
-      });
-    });
-  </script>
+  <script src="script.js"></script>
 </body>
 
 </html>
