@@ -1,280 +1,307 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad-Mahdi Amirpour - Computer Engineering Professional</title>
-    <style>
-        /* Modern, Professional Color Scheme */
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #3498db;
-            --accent-color: #e74c3c;
-            --text-color: #2c3e50;
-            --background-color: #f8f9fa;
-            --section-bg: #ffffff;
-        }
-
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: var(--text-color);
-            background-color: var(--background-color);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 2rem;
-        }
-
-        /* Header Styles */
-        header {
-            background-color: var(--primary-color);
-            color: white;
-            padding: 3rem 0;
-            text-align: center;
-        }
-
-        .profile-info h1 {
-            font-size: 2.5rem;
-            margin-bottom: 1rem;
-        }
-
-        .contact-info {
-            margin-top: 1rem;
-        }
-
-        .contact-info a {
-            color: white;
-            text-decoration: none;
-            margin: 0 1rem;
-            transition: color 0.3s;
-        }
-
-        .contact-info a:hover {
-            color: var(--secondary-color);
-        }
-
-        /* Section Styles */
-        section {
-            background-color: var(--section-bg);
-            margin: 2rem 0;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        }
-
-        h2 {
-            color: var(--primary-color);
-            margin-bottom: 1.5rem;
-            border-bottom: 2px solid var(--secondary-color);
-            padding-bottom: 0.5rem;
-        }
-
-        /* Skills Section */
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 1rem;
-        }
-
-        .skill-category {
-            margin-bottom: 1rem;
-        }
-
-        .skill-category h3 {
-            color: var(--secondary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        /* Experience & Projects */
-        .experience-item, .project-item {
-            margin-bottom: 2rem;
-        }
-
-        .experience-item h3, .project-item h3 {
-            color: var(--secondary-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .experience-meta {
-            color: var(--accent-color);
-            font-size: 0.9rem;
-            margin-bottom: 0.5rem;
-        }
-
-        ul {
-            list-style-position: inside;
-            margin-left: 1rem;
-        }
-
-        /* Education Section */
-        .education-item {
-            margin-bottom: 1.5rem;
-        }
-
-        .education-item h3 {
-            color: var(--secondary-color);
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 1rem;
-            }
-
-            header {
-                padding: 2rem 0;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad-Mahdi Amirpour - Computer Engineering Professional</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header>
-        <div class="container">
-            <div class="profile-info">
-                <h1>Muhammad-Mahdi Amirpour</h1>
-                <p>Computer Engineering Professional</p>
-                <div class="contact-info">
-                    <a href="mailto:muhammadmahdiamirpour@gmail.com">📧 Email</a>
-                    <a href="https://linkedin.com/in/muhammadmahdi-amirpour" target="_blank">🔗 LinkedIn</a>
-                    <a href="https://github.com/MuhammadMahdiAmirpour" target="_blank">💻 GitHub</a>
-                </div>
-            </div>
-        </div>
-    </header>
-
+  <!-- Navigation -->
+  <nav class="navbar">
     <div class="container">
-        <!-- Summary Section -->
-        <section id="summary">
-            <h2>Professional Summary</h2>
-            <p>A Computer Engineering undergraduate with practical experience in data science and machine learning. Familiar with Python, C/C++, Go, and Docker, and well-grounded in algorithms, data structures, and linear algebra. Served as a teaching assistant in formal languages and signals and systems, and contributed to research on anomaly detection architecture. Motivated to refine technical expertise through hands-on projects and collaborative learning.</p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills">
-            <h2>Technical Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h3>Programming Languages</h3>
-                    <p>Python, C/C++, Go, Java, Assembly</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Operating Systems</h3>
-                    <p>Linux (LPIC1)</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Databases</h3>
-                    <p>MySQL, Oracle, PostgreSQL</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Virtualization</h3>
-                    <p>Docker, VMware</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Frameworks</h3>
-                    <p>Numpy, Pandas, Matplotlib, River, Pytorch</p>
-                </div>
-                <div class="skill-category">
-                    <h3>Theory</h3>
-                    <p>Algorithm, Data Structures, Linear Algebra, Operating Systems, Signals and Systems</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience">
-            <h2>Professional Experience</h2>
-            <div class="experience-item">
-                <h3>Research Assistant - KNTU</h3>
-                <div class="experience-meta">March 2024 – Present</div>
-                <p>Assistant Professor: Dr. B. Pishgoo</p>
-                <ul>
-                    <li>Designed system architecture for anomaly detection</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Teaching Assistant - KNTU</h3>
-                <div class="experience-meta">March 2024 – February 2025</div>
-                <p>Assistant Professor: Dr. H. Khasteh</p>
-                <ul>
-                    <li>Grading quizzes and answering student questions</li>
-                    <li>Designed questions for Exercise Sessions</li>
-                    <li>Holding Exercise Sessions</li>
-                </ul>
-            </div>
-            <div class="experience-item">
-                <h3>Teaching Assistant - KNTU</h3>
-                <div class="experience-meta">March 2024 – February 2025</div>
-                <p>Assistant Professor: Dr. M. Mordian</p>
-                <ul>
-                    <li>Designed homework questions and grading quizzes</li>
-                    <li>Holding Exercise Sessions</li>
-                    <li>Designed the final project of the Signals and Systems Course</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects">
-            <h2>Notable Projects</h2>
-            <div class="project-item">
-                <h3>NLP/Vision/ML Project</h3>
-                <p>Comprehensive analysis of book summaries combining NLP, Computer Vision, and Machine Learning techniques.</p>
-                <ul>
-                    <li>Implemented text preprocessing and analysis</li>
-                    <li>Developed visual representations from text data</li>
-                    <li>Built and evaluated genre classification models</li>
-                </ul>
-            </div>
-            <div class="project-item">
-                <h3>Spectral Clustering Project</h3>
-                <p>Implementation of spectral clustering algorithms for unsupervised learning.</p>
-                <ul>
-                    <li>Implemented RBF Clustering, K-Means, and K-NN Clustering</li>
-                    <li>Worked with MNIST dataset for handwritten digit classification</li>
-                    <li>Optimized computational efficiency through vectorization</li>
-                </ul>
-            </div>
-            <div class="project-item">
-                <h3>Dockerized Full Stack Hotel Booking App</h3>
-                <ul>
-                    <li>Developed with Spring Boot and React JS</li>
-                    <li>Implemented user authentication and role-based access</li>
-                    <li>Containerized with Docker for scalability</li>
-                </ul>
-            </div>
-            <div class="project-item">
-                <h3>Dockerized Distributed File System</h3>
-                <ul>
-                    <li>Built using Golang and Docker</li>
-                    <li>Implemented distributed storage architecture</li>
-                    <li>Developed fault tolerance mechanisms</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education">
-            <h2>Education</h2>
-            <div class="education-item">
-                <h3>Khajeh Nasir Toosi University of Technology</h3>
-                <p>Bachelor of Science in Computer Engineering</p>
-                <p>GPA: 3.5/4 (17.21/20)</p>
-                <p>September 2021 – Present</p>
-            </div>
-        </section>
+      <div class="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#education">Education</a>
+      </div>
     </div>
+  </nav>
+
+  <!-- Header/Hero Section -->
+  <header id="home" class="hero">
+    <div class="container">
+      <div class="profile-card">
+        <div class="profile-info">
+          <h1 class="animate-text">Muhammad-Mahdi Amirpour</h1>
+          <p class="title animate-text-delay">Computer Engineering Student</p>
+          <div class="contact-info">
+            <a href="mailto:muhammadmahdiamirpour@gmail.com" class="contact-link">
+              <i class="fas fa-envelope"></i>
+              <span>Email</span>
+            </a>
+            <a href="https://linkedin.com/in/muhammadmahdi-amirpour" target="_blank" class="contact-link">
+              <i class="fab fa-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://github.com/MuhammadMahdiAmirpour" target="_blank" class="contact-link">
+              <i class="fab fa-github"></i>
+              <span>GitHub</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- About/Summary Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="card">
+          <p class="summary">A Computer Engineering undergraduate with practical experience in data science and machine
+            learning. Familiar with Python, C/C++, Go, and Docker, and well-grounded in algorithms, data structures, and
+            linear algebra. Served as a teaching assistant in formal languages and signals and systems, and contributed
+            to research on anomaly detection architecture. Motivated to refine technical expertise through hands-on
+            projects and collaborative learning.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+      <div class="container">
+        <h2 class="section-title">Technical Skills</h2>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <i class="fas fa-code card-icon"></i>
+            <h3>Programming Languages</h3>
+            <ul>
+              <li>Python</li>
+              <li>C/C++</li>
+              <li>Go</li>
+              <li>Java</li>
+              <li>Assembly</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-database card-icon"></i>
+            <h3>Databases</h3>
+            <ul>
+              <li>MySQL</li>
+              <li>Oracle</li>
+              <li>PostgreSQL</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-server card-icon"></i>
+            <h3>Virtualization</h3>
+            <ul>
+              <li>Docker</li>
+              <li>VMware</li>
+            </ul>
+          </div>
+          <div class="skill-card">
+            <i class="fas fa-brain card-icon"></i>
+            <h3>Frameworks</h3>
+            <ul>
+              <li>Numpy</li>
+              <li>Pandas</li>
+              <li>Matplotlib</li>
+              <li>River</li>
+              <li>Pytorch</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Research Assistant - KNTU</h3>
+              <span class="date">March 2024 – Present</span>
+              <p class="supervisor">Assistant Professor: Dr. B. Pishgoo</p>
+              <ul>
+                <li>Designed system architecture for anomaly detection</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-content">
+              <h3>Teaching Assistant - KNTU</h3>
+              <span class="date">March 2024 – February 2025</span>
+              <p class="supervisor">Assistant Professor: Dr. H. Khasteh</p>
+              <ul>
+                <li>Grading quizzes and answering student questions</li>
+                <li>Designed questions for Exercise Sessions</li>
+                <li>Holding Exercise Sessions</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+      <div class="container">
+        <h2 class="section-title">Notable Projects</h2>
+        <div class="projects-grid">
+          <div class="project-card">
+            <div class="project-content">
+              <h3>NLP/Vision/ML Project</h3>
+              <p>Comprehensive analysis of book summaries combining NLP, Computer Vision, and Machine Learning
+                techniques.</p>
+              <ul>
+                <li>Implemented text preprocessing and analysis</li>
+                <li>Developed visual representations from text data</li>
+                <li>Built and evaluated genre classification models</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Spectral Clustering Project</h3>
+              <p>Implementation of spectral clustering algorithms for unsupervised learning.</p>
+              <ul>
+                <li>Implemented RBF Clustering, K-Means, and K-NN Clustering</li>
+                <li>Worked with MNIST dataset for handwritten digit classification</li>
+                <li>Optimized computational efficiency through vectorization</li>
+              </ul>
+            </div>
+          </div>
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Dockerized Full Stack Hotel Booking App</h3>
+              <ul>
+                <li>Developed with Spring Boot and React JS</li>
+                <li>Implemented user authentication and role-based access</li>
+                <li>Containerized with Docker for scalability</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Add this inside the projects-grid div in the Projects Section -->
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Go-Back-N and CRC Simulation</h3>
+              <p>Simulated the Go-Back-N protocol and Cyclic Redundancy Check (CRC) error detection mechanism using
+                Django and JavaScript.</p>
+              <div class="project-details">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>Backend implemented in Django for core functionality</li>
+                  <li>Interactive visualizations of packet flow</li>
+                  <li>Real-time simulation of packet transmission</li>
+                  <li>Error detection and correction visualization</li>
+                  <li>Sliding window protocol management</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Chat App Go</h3>
+              <p>Real-time chat application using Go and JavaScript</p>
+              <div class="project-details">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>WebSocket-based communication</li>
+                  <li>User authentication and session management</li>
+                  <li>Scalable architecture for concurrent users</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Death Arena Game</h3>
+              <p>CLI-based combat game implemented in Java</p>
+              <div class="project-details">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>Automated gameplay with AI-driven opponents</li>
+                  <li>Turn-based combat mechanics</li>
+                  <li>Random events and outcomes</li>
+                  <li>Simple scoring system</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-content">
+              <h3>Video Merger</h3>
+              <p>High-performance video merging utility in C and Assembly</p>
+              <div class="project-details">
+                <h4>Key Features:</h4>
+                <ul>
+                  <li>Support for various video formats and resolutions</li>
+                  <li>Optimized performance using Assembly</li>
+                  <li>CMake and Makefile integration</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="education-card">
+          <h3>Khajeh Nasir Toosi University of Technology</h3>
+          <p class="degree">Bachelor of Science in Computer Engineering</p>
+          <p class="gpa">GPA: 3.5/4 (17.21/20)</p>
+          <p class="date">September 2021 – Present</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 Muhammad-Mahdi Amirpour. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
+        });
+      });
+    });
+
+    // Active navigation link highlighting
+    window.addEventListener('scroll', () => {
+      let current = '';
+      const sections = document.querySelectorAll('section');
+
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        if (scrollY >= sectionTop - 60) {
+          current = section.getAttribute('id');
+        }
+      });
+
+      document.querySelectorAll('.nav-links a').forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').substring(1) === current) {
+          link.classList.add('active');
+        }
+      });
+    });
+  </script>
 </body>
+
 </html>
