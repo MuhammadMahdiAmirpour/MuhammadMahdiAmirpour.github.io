@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Muhammad-Mahdi Amirpour | Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="styles.css">
 </head>
 
@@ -16,7 +17,7 @@
   </button>
 
   <!-- Navigation -->
-  <nav class="navbar">
+  <nav class="navbar animate__animated animate__fadeInDown">
     <div class="container">
       <div class="nav-links">
         <a href="#home" class="nav-link">Home</a>
@@ -33,14 +34,14 @@
   <header id="home" class="hero">
     <div class="container">
       <div class="hero-content">
-        <h1 class="main-title animate-text">Muhammad-Mahdi Amirpour</h1>
-        <div class="type-writer">Computer Engineering Student</div>
-        <div class="contact-links">
+        <h1 class="main-title animate__animated animate__fadeInUp">Muhammad-Mahdi Amirpour</h1>
+        <div class="type-writer animate__animated animate__fadeInUp">Computer Engineering Student</div>
+        <div class="contact-links animate__animated animate__fadeInUp">
           <a href="mailto:muhammadmahdiamirpour@gmail.com" class="contact-link">
             <i class="fas fa-envelope"></i>
             <span>muhammadmahdiamirpour@gmail.com</span>
           </a>
-          <a href="https://linkedin.com/in/muhammadmahdi-amirpour" target="_blank" class="contact-link">
+          <a href="www.linkedin.com/in/muhammad-mahdi-amirpour-426043249" target="_blank" class="contact-link">
             <i class="fab fa-linkedin"></i>
             <span>LinkedIn</span>
           </a>
@@ -55,7 +56,7 @@
 
   <main>
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section animate__animated animate__fadeInUp">
       <div class="container">
         <h2 class="section-title">About Me</h2>
         <div class="section-content">
@@ -71,7 +72,7 @@
     </section>
 
     <!-- Skills Section -->
-    <section id="skills" class="section">
+    <section id="skills" class="section animate__animated animate__fadeInUp">
       <div class="container">
         <h2 class="section-title">Technical Skills</h2>
         <div class="skills-grid">
@@ -137,7 +138,7 @@
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="section">
+    <section id="experience" class="section animate__animated animate__fadeInUp">
       <div class="container">
         <h2 class="section-title">Professional Experience</h2>
         <div class="timeline">
@@ -194,7 +195,7 @@
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="section">
+    <section id="projects" class="section animate__animated animate__fadeInUp">
       <div class="container">
         <h2 class="section-title">Notable Projects</h2>
         <div class="projects-grid">
@@ -294,7 +295,7 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="section">
+    <section id="education" class="section animate__animated animate__fadeInUp">
       <div class="container">
         <h2 class="section-title">Education</h2>
         <div class="education-card">
@@ -307,7 +308,6 @@
     </section>
   </main>
 
-
   <!-- Footer -->
   <footer>
     <div class="container">
@@ -316,12 +316,15 @@
           Current Date and Time (UTC - YYYY-MM-DD HH:MM:SS formatted):
           <span id="current-time"></span>
         </p>
-        <p class="user-info">Current User's Login: MuhammadMahdiAmirpour</p>
       </div>
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/ScrollTrigger.min.js"></script>
   <script src="script.js"></script>
 </body>
 
 </html>
+<!DOCTYPE html>
+<html lang="en">

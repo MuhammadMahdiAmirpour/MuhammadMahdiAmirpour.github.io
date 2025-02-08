@@ -38,13 +38,52 @@ function initializeScrollAnimations() {
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.classList.add('fade-in');
+                entry.target.classList.add('fade-in-visible');
             }
         });
     }, { threshold: 0.1 });
 
     sections.forEach(section => {
         observer.observe(section);
+    });
+}
+
+// GSAP Animations
+function initializeGSAPAnimations() {
+    gsap.registerPlugin(ScrollTrigger);
+
+    gsap.from(".hero-content", {
+        duration: 1.5,
+        y: -50,
+        opacity: 0,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".hero-content",
+            start: "top center"
+        }
+    });
+
+    gsap.from(".section-title", {
+        duration: 1,
+        y: 30,
+        opacity: 0,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".section-title",
+            start: "top 80%"
+        }
+    });
+
+    gsap.from(".skill-card, .project-card, .education-card", {
+        duration: 1,
+        y: 50,
+        opacity: 0,
+        stagger: 0.2,
+        ease: "power1.out",
+        scrollTrigger: {
+            trigger: ".skills-grid, .projects-grid, .education-card",
+            start: "top 80%"
+        }
     });
 }
 
@@ -61,6 +100,9 @@ document.addEventListener('DOMContentLoaded', () => {
     
     // Initialize scroll animations
     initializeScrollAnimations();
+    
+    // Initialize GSAP animations
+    initializeGSAPAnimations();
     
     // Smooth scrolling for navigation
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
